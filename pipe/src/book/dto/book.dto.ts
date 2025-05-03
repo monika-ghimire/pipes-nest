@@ -1,7 +1,10 @@
-
+import { IsInt, IsString } from 'class-validator';
 
 export class BookDto {
-    id : number;
-    title : string;
+    @IsInt()
+    id: number;
+  
+    @IsString()
+    title: string;
     
 }
