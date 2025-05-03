@@ -1,6 +1,6 @@
 import { Body, Controller , Get ,Param, ParseIntPipe, Post, ValidationPipe} from "@nestjs/common";
 import { BookDto } from "./dto/book.dto";
-// import { BookPipe } from "./dto/pipes/book.pip";
+import { BookPipe } from "./dto/pipes/book.pip";
 import { BookPipeValidator } from "./dto/pipes/validator.pip";
 
 @Controller("book")
